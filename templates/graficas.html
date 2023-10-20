@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block Titulo%} home | Proyecto {%endblock %}
+{%block links_nav %}
+<a href="{{url_for('mostrar_dataframe_sistemas')}}" class="btn_ver_data"
+  >Ver Ingenieria de sistemas</a
+>
+<a href="{{url_for('mostrar_dataframe_electronica')}}" class="btn_ver_data"
+  >Ver Ingenieria electronica</a
+>
+<a href="{{url_for('mostrar_dataframe_docente')}}" class="btn_ver_data"
+  >Ver Docente</a
+>
+<a href="{{url_for('mostrar_dataframe_administrativo')}}" class="btn_ver_data"
+  >Ver Administrativo</a
+>
+<a href="{{url_for('mostrar_dataframe_otro_programa')}}" class="btn_ver_data"
+  >Ver otro programa</a
+>
+<a href="{{url_for('mostrar_dataframe_gov')}}" class="btn_ver_data"
+  >Ver Gobernacion
+</a>
+{% endblock %} {% block contenido %}
+<div class="containt-home">
+  <div class="title-home">
+    <h1>Dataframe {{h1_page}}</h1>
+  </div>
+</div>
+{% endblock %}

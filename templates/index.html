@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block Titulo%} home | Proyecto {%endblock %}
+{%block links_nav %}
+<a href="{{url_for('home')}}" class="btn_link_nav">Inicio</a>
+<a href="{{url_for('home')}}" class="btn_link_nav">graficos</a>
+<a href="{{url_for('home')}}" class="btn_link_nav">Tablas</a>
+<a href="{{url_for('home')}}" class="btn_link_nav">Mapa</a>
+
+{% endblock %} {% block contenido %}
+<div class="containt-home">
+  <div class="title-home">
+    <h1 class="index_welcome">!!¡Bienvenidos a nuestro rincón turístico!!!</h1>
+  </div>
+  <div class="desc-home">
+    <h2>
+      En este espacio, encontrarás a los prestadores de servicios turísticos más
+      apasionados y dedicados, listos para hacer de tu experiencia de viaje algo
+      inolvidable.
+    </h2>
+    <h2>
+      Desde emocionantes aventuras en la naturaleza hasta descubrimientos
+      culturales en ciudades vibrantes, estamos aquí para guiarte. Nuestro
+      compromiso es proporcionarte información detallada, consejos útiles y
+      recomendaciones de expertos para que puedas planificar tu viaje de manera
+      fácil y segura.
+    </h2>
+    <h2>
+      Explora nuestro sitio para descubrir destinos fascinantes, alojamientos
+      acogedores y actividades emocionantes.
+    </h2>
+  </div>
+</div>
+{% endblock %}

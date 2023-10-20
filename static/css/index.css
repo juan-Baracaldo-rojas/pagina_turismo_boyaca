@@ -1,0 +1,22 @@
+.navheader_links{
+    width: 100;
+    text-align:center;
+}
+.btn_link_nav{
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: black;
+}
+.containt-home{
+    padding: 10px 100px;
+    text-align: justify;
+    font-size: 14px;
+    font-family: 'Playpen Sans', cursive;
+}
+.btn_link_nav:hover{
+    background-color:#221f1f;
+    color: #f5f5f1;
+}

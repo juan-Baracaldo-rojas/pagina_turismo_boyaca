@@ -10,8 +10,8 @@ df=pd.read_csv("./static/data/Base_de_Prestadores_de_Servicios_Tur_sticos__SITUR
 # df=pd.read_csv("/home/juan/Documentos/POSGRADO/administracion de bases de datos/aplicacion_web_proyecto/codigo/app/static/datos_agrupados_proyecto.csv")
 
 @app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+def home():
+    return render_template("index.html")
 
 if __name__ == '__main__':
     app.run(debug=True)

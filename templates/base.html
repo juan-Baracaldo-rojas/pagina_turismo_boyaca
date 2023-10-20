@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='/css/style.css')}}"
+    />
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playpen+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Incluimos las bibliotecas Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>{%block Titulo%} {%endblock%}</title>
+  </head>
+  <body>
+    <nav class="navHeader">
+      <div class="contenedor_navHeader">
+        <div class="logo">
+          <a href="{{url_for('home')}}">
+            <img
+              src="{{url_for('static',filename='/img/Logo.png')}}"
+              alt="logo"
+              width="220px"
+              height="220px"
+          /></a>
+        </div>
+        <div class="navheader_links">{%block links_nav%} {%endblock%}</div>
+      </div>
+    </nav>
+    {% block contenido %} {% endblock %}
+    <footer class="footer">
+      <div class="contenedor_fotter">
+        <p>
+          Creado por
+          <a href="https://www.linkedin.com/in/jm-baracaldo/"
+            >Juan Manuel Baracaldo Rojas</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
