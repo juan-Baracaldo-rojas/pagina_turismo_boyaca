@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block Titulo%} home | tablas {%endblock %} {%block
+links_nav %}
+<a href="{{url_for('home')}}" class="btn_atras">Atras</a>
+<a href="{{url_for('home')}}" class="btn_link_nav">Mapa</a>
+
+{% endblock %} {% block contenido %}
+<div class="containt-table">
+  <h1>Tabla {{h1_page}} de empresas prestadoras de servicios turisticos</h1>
+  <div class="title-table">
+    <table border="1">
+      <tr>
+        {% for column in dataframe.columns %}
+        <th>{{ column }}</th>
+        {% endfor %}
+      </tr>
+      {% for index, row in dataframe.iterrows() %}
+      <tr>
+        <td>{{row['Numero del RNT']}}</td>
+
+        <td>{{row['Municipio']}}</td>
+        <td>{{row['Departamento']}}</td>
+        <td>{{row['Nombre Comercial']}}</td>
+        <td>{{row['Categoria']}}</td>
+        <td>{{row['Subcategoria']}}</td>
+        <td>{{row['Direccion Comercial']}}</td>
+        <td>{{row['Correo Electronico']}}</td>
+        <td>{{row['Habitaciones']}}</td>
+        <td>{{row['Camas']}}</td>
+        <td>{{row['Empleados']}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+{% endblock %}

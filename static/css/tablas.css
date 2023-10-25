@@ -1,0 +1,39 @@
+.containt-table h1{
+    
+    font-family: 'Playpen Sans', cursive;
+    text-align: center;
+}
+.btn_atras{
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: black;
+}
+.btn_atras:hover{
+    background-color: #e50914;
+    color: #fff;
+}
+.title-table{
+    overflow-x: auto; /* Habilita la barra de desplazamiento horizontal si es necesario */
+    
+}
+.title-table table{
+    border: 4px solid black;
+    width: 100%;
+    overflow-x: auto;
+}
+.title-table th{
+    background-color:#221f1f;
+    color: #fff;
+    font-family: 'Playpen Sans', cursive;
+    border: 2px solid black;
+}
+.title-table td{
+    border: 2px solid black;
+}
+.title-table tr:hover{
+    background-color: #e50914;
+    color: #fff;
+}

@@ -1,7 +1,26 @@
 @import url(index.css);
+@import url(tablas.css);
+@import url(graficas.css);
 .logo{
-    margin-left: 90px;
+    text-align: center;
+    
 }
 .contenedor_fotter{
     margin-left: 100px;
+}
+.btn_link_nav:hover{
+    background-color:#221f1f;
+    color: #f5f5f1;
+}
+.navheader_links{
+    width: 100;
+    text-align:center;
+}
+.btn_link_nav{
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: black;
 }

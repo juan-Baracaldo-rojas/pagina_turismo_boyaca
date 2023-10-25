@@ -1,8 +1,8 @@
 {% extends 'base.html' %} {% block Titulo%} home | Proyecto {%endblock %}
 {%block links_nav %}
 <a href="{{url_for('home')}}" class="btn_link_nav">Inicio</a>
-<a href="{{url_for('home')}}" class="btn_link_nav">graficos</a>
-<a href="{{url_for('home')}}" class="btn_link_nav">Tablas</a>
+<a href="{{url_for('graficos')}}" class="btn_link_nav">graficos</a>
+<a href="{{url_for('tablas')}}" class="btn_link_nav">Tablas</a>
 <a href="{{url_for('home')}}" class="btn_link_nav">Mapa</a>
 
 {% endblock %} {% block contenido %}
